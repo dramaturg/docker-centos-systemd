@@ -6,7 +6,7 @@ ENV container docker
 
 RUN rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org && \
 		rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm && \
-		rpm -Uvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm && \
+		rpm -Uvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-7.noarch.rpm && \
 		yum -y install yum-plugin-fastestmirror && \
 		yum -y update && \
 		yum -y install at cronie yum-cron && \
